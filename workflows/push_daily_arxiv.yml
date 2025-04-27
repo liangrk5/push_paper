@@ -13,7 +13,7 @@ jobs:
   daily-push:
     runs-on: ubuntu-latest
     env:
-      QUERY: ${{ secrets.ARXIV_QUERY || 'cs.IR,cs.AI,cs.CL' }}
+      QUERYS: ${{ secrets.QUERYS || 'cs.IR,cs.AI,cs.CL' }}
       LIMITS: ${{ secrets.ARXIV_LIMITS || '50' }}
       FEISHU_URL: ${{ secrets.FEISHU_URL }}
       API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
